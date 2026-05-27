@@ -1,56 +1,100 @@
-📌 Project Overview
+# 📚 Learny — Java Interview Question Generator
 
-Learny is a simple interview question generator built using Java based on Object-Oriented Programming (OOPS) concepts.
-The project helps students and beginners prepare for technical interviews by generating common Java and OOPS-based questions.
+A console-based Java application that helps students and developers prepare for technical interviews by generating randomized Q&A sessions across Core Java and OOP topics.
 
-The goal of this project is to make interview preparation easier by providing quick access to frequently asked questions related to Java fundamentals.
+---
 
-🚀 Features
+## 🚀 Features
 
-Generates Java interview questions
-Focuses on OOPS concepts
-Simple and beginner-friendly interface
-Useful for students preparing for technical interviews
-Helps revise core Java concepts quickly
+- **5 question modes** — Core Java, OOP, Easy, Medium, and Hard levels
+- **Randomized question selection** — 6 unique questions per session, no repeats
+- **On-demand answers** — choose to reveal the answer after each question
+- **Lightweight** — pure Java, no external dependencies
 
-🧠 Topics Covered
+---
 
-The question generator includes topics such as:
-Classes and Objects
-Inheritance
-Polymorphism
-Encapsulation
-Abstraction
-Constructors
-Method Overloading & Overriding
-Basic Java Programming Concepts
+## 🛠️ Tech Stack
 
-🛠️ Technologies Used
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 
-Java
-OOPS Concepts
-Basic programming logic
+- Language: **Java**
+- Concepts used: OOP, Collections (`HashSet`, `Random`, `Scanner`), Switch-case, Array handling
 
-📂 Project Structure
-Learny
-│
-├── QuestionGenerator.java
-├── OOPSQuestions.java
-├── Main.java
+---
+
+## 📁 Project Structure
+
+```
+Learny/
+├── Main.java          # Entry point — displays menu and takes user input
+├── Generator.java     # Picks 6 random questions and handles Q&A flow
+├── QuestionBank.java  # Contains QA class and all question sets
 └── README.md
+```
 
-🎯 Purpose of the Project
+---
 
-This project was created to:
-Practice Java programming
-Understand OOPS implementation
-Build a small developer portfolio project
-Help students prepare for Java interviews
+## ▶️ How to Run
 
-📈 Future Improvements
+**Prerequisites:** Java JDK 8 or above installed.
 
-Add more interview questions
-Categorize questions by difficulty level
-Add a graphical interface
-Include answers along with questions
-Convert into a web-based application
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/Jassgit18/Learny.git
+cd Learny
+
+# Step 2: Compile
+javac Main.java Generator.java QuestionBank.java
+
+# Step 3: Run
+java Main
+```
+
+---
+
+## 🎮 Usage
+
+```
+=== Interview Question Generator ===
+1. Common Repeated Java Questions
+2. Common Repeated OOPS Questions
+3. Easy Level (Mixed)
+4. Medium Level (Mixed)
+5. Hard Level (Mixed)
+Enter your choice: 1
+
+Your Questions:
+
+1. What is Java and why is it platform independent?
+Do you want the answer? (y/n): y
+Answer: Java is a programming language that runs on any OS because it compiles into bytecode...
+```
+
+---
+
+## 📌 Question Categories
+
+| Mode | Topics Covered |
+|------|---------------|
+| Core Java | JVM, JDK, JRE, Constructors, Exceptions, Threads, GC |
+| OOP | Encapsulation, Inheritance, Polymorphism, SOLID, Binding |
+| Easy | Basic definitions and concepts |
+| Medium | Comparisons and moderate-depth topics |
+| Hard | JIT, Deadlock, Synchronization, Memory Leaks |
+
+---
+
+## 🔮 Future Improvements
+
+- [ ] Add more question categories (DSA, DBMS, OS)
+- [ ] Score tracking per session
+- [ ] GUI version using JavaFX or Swing
+- [ ] Import questions from external JSON/CSV file
+
+---
+
+## 👨‍💻 Author
+
+**Jasel Respin**
+[LinkedIn](https://linkedin.com/in/jaselrespin)
+[GitHub](https://github.com/Jassgit18)
